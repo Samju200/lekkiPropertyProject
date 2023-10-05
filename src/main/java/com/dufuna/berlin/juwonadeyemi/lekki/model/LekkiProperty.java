@@ -119,14 +119,7 @@ public class LekkiProperty {
         return "LekkiProperty{" +
                 "propertyId='" + propertyId + '\'' +
                 ", propertyAddress='" + propertyAddress + '\'' +
-                ", propertyType='" + propertyType + '\'' +  "," +
-                " numberOfBedrooms='" + numberOfBedrooms + '\'' +
-                ", numberOfSittingRooms='" + numberOfSittingRooms + '\'' +
-                ", numberOfKitchens='" + numberOfKitchens + '\'' +
-                ", numberOfBathrooms='" + numberOfBathrooms + '\'' +
-                ", numberOfToilets='" + numberOfToilets + '\'' +
-                ", propertyOwner='" + propertyOwner + '\'' +
-                ", description='" + description + '\'' +
+                ", propertyType='" + propertyType + '\'' +
                 '}';
     }
 

@@ -8,4 +8,5 @@ public interface LekkiPropertyService {
     LekkiProperty saveProperty(LekkiProperty property);
     LekkiProperty getProperty(String id);
     List<LekkiProperty> getProperties();
+    void update(LekkiProperty property);
 }

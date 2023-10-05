@@ -28,4 +28,7 @@ public class MockLekkiPropertyService implements LekkiPropertyService{
         System.out.println("MockLekkiPropertyService.getProperties called");
         return propertyRepository.findAll();
     }
+    public void update(LekkiProperty property) {
+        propertyRepository.update(property);
+    }
 }
