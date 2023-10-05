@@ -3,7 +3,7 @@ package com.dufuna.berlin.juwonadeyemi.lekki.model;
 import java.util.Objects;
 
 public class LekkiProperty {
-    private int propertyId;
+    private String propertyId;
     private String propertyAddress;
     private String propertyType;
     private int numberOfBedrooms;
@@ -20,11 +20,11 @@ public class LekkiProperty {
     public LekkiProperty() {
     }
 
-    public int getPropertyId() {
+    public String getPropertyId() {
         return propertyId;
     }
 
-    public void setPropertyId(int propertyId) {
+    public void setPropertyId(String propertyId) {
         this.propertyId = propertyId;
     }
 
@@ -115,28 +115,30 @@ public class LekkiProperty {
     public void setValidTo(String validTo) {
         this.validTo = validTo;
     }
-
-    @Override
     public String toString() {
         return "LekkiProperty{" +
                 "propertyId='" + propertyId + '\'' +
                 ", propertyAddress='" + propertyAddress + '\'' +
-                ", propertyType='" + propertyType + '\'' +
+                ", propertyType='" + propertyType + '\'' +  "," +
+                " numberOfBedrooms='" + numberOfBedrooms + '\'' +
+                ", numberOfSittingRooms='" + numberOfSittingRooms + '\'' +
+                ", numberOfKitchens='" + numberOfKitchens + '\'' +
+                ", numberOfBathrooms='" + numberOfBathrooms + '\'' +
+                ", numberOfToilets='" + numberOfToilets + '\'' +
+                ", propertyOwner='" + propertyOwner + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof LekkiProperty)) return false;
-
-        LekkiProperty that = (LekkiProperty) o;
-
-        return propertyId == that.propertyId;
+        LekkiProperty property = (LekkiProperty) o;
+        return Objects.equals(propertyId, property.propertyId);
     }
 
-    @Override
+
     public int hashCode() {
-        return propertyId;
+        return Objects.hash(propertyId);
     }
 }
