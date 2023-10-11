@@ -22,9 +22,13 @@ public class LekkiProperty {
      * The type of the Lekki Property (e.g., house, flat).
      */
     private String propertyType;
-
     /**
      * The number of bedrooms in the Lekki Property.
+     */
+    private int numberOfBedrooms;
+
+    /**
+     * The number of bathrooms in the Lekki Property.
      */
     private int numberOfBathrooms;
 
@@ -122,6 +126,24 @@ public class LekkiProperty {
     }
 
 
+
+    /**
+     * Gets the type of the numbers of bedrooms.
+     *
+     * @return The property's bedrooms as an int.
+     */
+    public int getNumberOfBedrooms() {
+        return numberOfBedrooms;
+    }
+
+    /**
+     * Sets the number of bathrooms of the property.
+     *
+     * @param numberOfBedrooms The new numberOfBathrooms to set for the property.
+     */
+    public void setNumberOfBedrooms(int numberOfBedrooms) {
+        this.numberOfBedrooms = numberOfBedrooms;
+    }
     /**
      * Gets the type of the numbers of sitting rooms.
      *
