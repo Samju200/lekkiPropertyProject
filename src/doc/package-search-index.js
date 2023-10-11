@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.dufuna.berlin.juwonadeyemi.lekki"},{"l":"com.dufuna.berlin.juwonadeyemi.lekki.model"},{"l":"com.dufuna.berlin.juwonadeyemi.lekki.repository"},{"l":"com.dufuna.berlin.juwonadeyemi.lekki.service"}];updateSearchResults();
