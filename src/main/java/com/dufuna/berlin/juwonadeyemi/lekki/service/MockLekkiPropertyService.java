@@ -40,7 +40,7 @@ public class MockLekkiPropertyService implements LekkiPropertyService {
      * @param propertyRepository The repository for storing and managing Lekki properties.
      */
     public MockLekkiPropertyService(SimpleLekkiPropertyRepositoryImpl propertyRepository) {
-        this.propertyRepository = propertyRepository;
+         this.propertyRepository = propertyRepository;
     }
 
     /**
